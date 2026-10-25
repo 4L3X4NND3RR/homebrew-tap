@@ -6,8 +6,8 @@ class Deviceaudiosr < Formula
   license "MIT"
   head "https://github.com/4L3X4NND3RR/DeviceAudioSR.git", branch: "main"
 
-  # Package.swift requires macOS 15.6. Homebrew can only declare Sequoia (15).
   depends_on xcode: ["16.0", :build]
+  # Package.swift requires macOS 15.6. Homebrew can only declare Sequoia (15).
   depends_on macos: :sequoia
 
   def install
