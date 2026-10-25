@@ -6,9 +6,9 @@ class Deviceaudiosr < Formula
   license "MIT"
   head "https://github.com/4L3X4NND3RR/DeviceAudioSR.git", branch: "main"
 
+  depends_on xcode: ["16.0", :build]
   # Package.swift requires macOS 15.6. Homebrew can only declare Sequoia (15).
   depends_on macos: :sequoia
-  depends_on xcode: ["16.0", :build]
 
   def install
     # SwiftPM's sandbox cannot nest inside Homebrew's; Homebrew still sandboxes the build.
